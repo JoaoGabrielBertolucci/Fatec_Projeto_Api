@@ -9,19 +9,22 @@
         <div class="row m-3">
             <div class="col">
 
-                <img src="https://images.dog.ceo/breeds/bulldog-english/jager-2.jpg"
-                width = "200px"
+                
+
+                <img [src]="dog.message"
+                width = "500px"
                 class="shadow rounded"
                 >
-            
 
             </div>
         </div>
 
         <div class="row m-3">
             <div class="col">
-            
-                bulldog-english
+                <span *ngFor="let name of getName()">
+                        {{name}}
+                </span> <br>
+             
 
                 <button class ="btn btn-primary-button"> new dog</button>
 
