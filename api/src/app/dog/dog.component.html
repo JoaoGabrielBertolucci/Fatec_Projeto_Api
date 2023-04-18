@@ -21,8 +21,8 @@
 
         <div class="row m-3">
             <div class="col">
-                <span *ngFor="let name of getName()">
-                        {{name}}
+                <span *ngFor="let name of getName()"> <!-- for que percorre a variavelv array do dog.component.ts-->
+                        {{name | titlecase}}
                 </span> <br>
              
 
